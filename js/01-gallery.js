@@ -75,12 +75,11 @@ function onImgClick(event) {
       }
     }
   );
-
-  function onClickEsc(event) {
-    if (event.key === "Escape") {
-      instance.close();
-    }
-  }
-
   instance.show();
+}
+
+function onClickEsc(event) {
+  if (event.key === "Escape") {
+    instance.close();
+  }
 }
