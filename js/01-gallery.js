@@ -62,6 +62,9 @@ galleryContainer.addEventListener("click", onImgClick);
 
 function onImgClick(event) {
   event.preventDefault();
+  if (event.target.nodeName !== "IMG") {
+    return;
+  }
 
   // const instance і onClose взяті з бібліотеки
   const instance = basicLightbox.create(
